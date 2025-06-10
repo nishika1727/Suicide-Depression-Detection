@@ -1,20 +1,73 @@
 # 🧠 Suicide and Depression Detection Using Deep Learning
 
-This project is a deep learning-powered web app that detects whether a given text (tweet, quote, or post) indicates suicidal or depressive content. Built using LSTM with GloVe word embeddings and deployed via Streamlit.
+A deep learning-powered web application that detects whether a given text (tweet, quote, or post) expresses **suicidal** or **depressive** thoughts. Built with an **LSTM model** using **GloVe embeddings**, and deployed through **Streamlit** for an interactive user experience.
+
+---
 
 ## 🔍 Problem Statement
-Social media platforms contain posts that may indicate a person in distress. Identifying such posts using AI can be a step toward providing timely help and intervention.
+
+Social media often reflects a person’s mental state. Detecting suicidal or depressive content in posts can help in initiating timely support or intervention. This project leverages NLP and deep learning to automate that detection process.
+
+---
 
 ## 📊 Dataset
-- **Source**: [Kaggle - Suicide Detection](https://www.kaggle.com/datasets/nikhileswarkomati/suicide-watch)
-- Contains labeled data indicating whether text is **suicidal/depressed** or **not**.
 
-## 🧠 Model
-- Deep learning model: **LSTM**
-- Embedding: **Pre-trained GloVe vectors**
-- Trained to classify text as **suicidal/depressive** or **neutral**
+- **Source**: [Kaggle - Suicide Watch Dataset](https://www.kaggle.com/datasets/nikhileswarkomati/suicide-watch)
+- The dataset contains social media posts labeled as:
+  - `suicidal/depressed`
+  - `not suicidal/depressed`
 
-## 🖥️ Streamlit App
-- Input: Any line/post/tweet
-- Output: Label indicating presence of suicidal/depressive tone
-- Interface built using **Streamlit**
+---
+
+## 🧠 Model Overview
+
+- **Architecture**: LSTM (Long Short-Term Memory)
+- **Embeddings**: Pre-trained GloVe word vectors
+- **Objective**: Binary classification of text (suicidal/depressive vs. neutral)
+- **Frameworks used**: TensorFlow, Keras, Scikit-learn
+
+---
+
+## 🖥️ Streamlit Web App
+
+The Streamlit interface allows users to input a line/post/tweet and receive a prediction.
+
+### 💡 Features:
+- Simple text input
+- Real-time prediction
+- Easy to run locally with minimal setup
+
+---
+
+## 🚀 Getting Started
+
+### 🔧 Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/suicide-depression-detector.git
+   cd suicide-depression-detector
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+3. Run the app:
+   ```bash
+   streamlit run app.py
+
+## 🔻 Model & Dataset
+Due to file size restrictions, the trained model (model.h5) and dataset are not included in this repository.
+
+Please download them manually:
+
+📥 Model file and Dataset: [Google Drive Link](https://drive.google.com/drive/folders/1iQHSNkkB3qYF7ys7xBozjlaqigtuI0k6?usp=drive_link)
+
+
+Place the downloaded files into their respective directories:
+```bash
+suicide-depression-detector/
+├── model/
+│   └── model.h5
+├── data/
+│   └── suicide_dataset.csv
