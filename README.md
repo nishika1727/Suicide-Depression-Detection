@@ -62,12 +62,3 @@ Due to file size restrictions, the trained model (model.h5) and dataset are not 
 Please download them manually:
 
 📥 Model file and Dataset: [Google Drive Link](https://drive.google.com/drive/folders/1iQHSNkkB3qYF7ys7xBozjlaqigtuI0k6?usp=drive_link)
-
-
-Place the downloaded files into their respective directories:
-```bash
-suicide-depression-detector/
-├── model/
-│   └── model.h5
-├── data/
-│   └── suicide_dataset.csv
